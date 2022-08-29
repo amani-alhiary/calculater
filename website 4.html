@@ -1,0 +1,95 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #a9bf7e;
+            box-sizing: border-box;
+
+        }
+        .calculater{
+            width: 30%;
+            height: 600px;
+            background-color: #ADD8E6;
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            grid-template-rows: 90px repeat(4,auto);
+            border: 25px solid #ADD8E6;
+            text-align: center;
+            font-size: 45px;
+            gap: 15px;
+            margin: auto;
+        }
+        .calculater .num{
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding-top: 10px;
+            margin-top: 10px;
+
+        }
+        .result{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: #f6fff0;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding-top: 10px;
+            height: 100px;
+
+
+        }
+        .sum{
+            background-color: 	#FCF55F;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding-top: 10px;
+            margin-top: 10px;
+
+
+
+        }
+        .span-two{
+            background-color: #FF8080;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding-top: 10px;
+            margin-top: 10px;
+
+
+
+        }
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculater">
+        <div class="result">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+          </div>    
+        <button  class="num"  data-number>1</button>
+        <button  class="num"  data-number>2</button>
+        <button  class="num"  data-number>3</button>
+        <button  class="sum"  data-operation>+</button>
+        <button  class="num"  data-number>4</button>
+        <button  class="num"  data-number>5</button>
+        <button  class="num"  data-number>6</button>
+        <button  class="sum"  data-operation>-</button>
+        <button  class="num"  data-number>7</button>
+        <button  class="num"  data-number>8</button>
+        <button  class="num"  data-number>9</button>
+        <button  class="sum"  data-operation>*</button>
+        <button  class="span-two"  data-all-clear>C</button>
+        <button  class="num"  data-number>0</button>
+        <button  class="num equal"  data-equals>=</button>
+        <button  class="sum"  data-number>/</button>
+
+
+    </div>
+    <script src="javascrip.js"></script>
+</body>
+</html>
